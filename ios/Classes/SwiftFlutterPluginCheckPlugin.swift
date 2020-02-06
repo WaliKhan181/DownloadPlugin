@@ -16,7 +16,7 @@ public class SwiftFlutterPluginCheckPlugin: NSObject, FlutterPlugin {
             var message = map?["url"]
             var request = URLRequest(url: message!)
             request.httpMethod = "GET"
-            let task = URLSession.shared.downloadTask(with: url) { localURL, urlResponse, error in
+            let task = URLSession.shared.downloadTask(with: message) { localURL, urlResponse, error in
                  if let localURL = localURL {
                      if let string = try? String(contentsOf: localURL) {
                          print(string)
