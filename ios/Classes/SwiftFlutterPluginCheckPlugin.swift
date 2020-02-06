@@ -10,24 +10,19 @@ public class SwiftFlutterPluginCheckPlugin: NSObject, FlutterPlugin {
     
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         if (call.method == "showToast"){
-            let sessionConfig = NSURLSessionConfiguration.defaultSessionConfiguration()
-            let session = NSURLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
-            let request = NSMutableURLRequest(URL: URL)
-            request.HTTPMethod = "GET"
-            let task = session.dataTaskWithRequest(request, completionHandler: { (data: NSData!, response: NSURLResponse!, error: NSError!) -> Void in
-                if (error == nil) {
-                    // Success
-                    let statusCode = (response as NSHTTPURLResponse).statusCode
-                    println("Success: \(statusCode)")
-                    
-                    // This is your file-variable:
-                    // data
-                }
-                else {
-                    // Failure
-                    println("Failure: %@", error.localizedDescription);
-                }
-            })
+            let sessionConfig = URLSessionConfiguration.default
+            let session = URLSession(configuration: sessionConfig, delegate: nil, delegateQueue: nil)
+            var map = call.arguments as? Dictionary<String,URL>
+            var message = map?["url"]
+            var request = URLRequest(url: message!)
+            request.httpMethod = "GET"
+            let task = URLSession.shared.downloadTask(with: url) { localURL, urlResponse, error in
+                 if let localURL = localURL {
+                     if let string = try? String(contentsOf: localURL) {
+                         print(string)
+                     }
+                 }
+             }
             task.resume()
         }
     }
