@@ -24,12 +24,5 @@ public class FlutterPluginCheckPlugin: FlutterPlugin, MethodCallHandler {
   // them functionally equivalent. Only one of onAttachedToEngine or registerWith will be called
   // depending on the user's project. onAttachedToEngine or registerWith must both be defined
   // in the same class.
-  companion object {
-    @JvmStatic
-    fun registerWith(registrar: Registrar) {
-      val channel = MethodChannel(registrar.messenger(), "flutter_plugin_check")
-      channel.setMethodCallHandler(FlutterPluginCheckPlugin(registrar))
-    }
-  }
-
+  
 }
