@@ -31,15 +31,5 @@ public class FlutterPluginCheckPlugin: FlutterPlugin, MethodCallHandler {
       channel.setMethodCallHandler(FlutterPluginCheckPlugin(registrar))
     }
   }
-
-  override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-    if (call.method == "showToast") {
-
-    } else {
-      result.notImplemented()
-    }
-  }
-
-  override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
-  }
+  
 }
