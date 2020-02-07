@@ -32,7 +32,7 @@ public class FlutterPluginCheckPlugin: FlutterPlugin, MethodCallHandler {
     }
   }
 
-  override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
+  override fun onMethodCall(call: MethodCall, result: Result) {
     if (call.method.equals("showToast")) {
       val message: String = call.argument("message")
       Toast.makeText(registrar.context(), message, Toast.LENGTH_LONG).show()
@@ -41,6 +41,6 @@ public class FlutterPluginCheckPlugin: FlutterPlugin, MethodCallHandler {
     }
   }
 
-  override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
+  override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
   }
 }
