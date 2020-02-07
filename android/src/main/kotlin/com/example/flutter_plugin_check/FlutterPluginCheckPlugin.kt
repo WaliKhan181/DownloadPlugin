@@ -28,13 +28,13 @@ public class FlutterPluginCheckPlugin: FlutterPlugin, MethodCallHandler {
     @JvmStatic
     fun registerWith(registrar: Registrar) {
       val channel = MethodChannel(registrar.messenger(), "flutter_plugin_check")
-      channel.setMethodCallHandler(FlutterPluginCheckPlugin())
+      channel.setMethodCallHandler(FlutterPluginCheckPlugin(registrar))
     }
   }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
-    if (call.method == "getPlatformVersion") {
-      result.success("Android ${android.os.Build.VERSION.RELEASE}")
+    if (call.method == "showToast") {
+
     } else {
       result.notImplemented()
     }
