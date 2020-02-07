@@ -31,5 +31,5 @@ public class FlutterPluginCheckPlugin: FlutterPlugin, MethodCallHandler {
       channel.setMethodCallHandler(FlutterPluginCheckPlugin(registrar))
     }
   }
-  
+
 }

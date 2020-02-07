@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c57c9494-61f1-4961-b7ba-7dcd0e3ce827" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/example/flutter_plugin_check/FlutterPluginCheckPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/example/flutter_plugin_check/FlutterPluginCheckPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/.flutter-plugins-dependencies">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="153" lean-forward="true" selection-start-column="153" selection-end-column="153" />
+              <caret column="153" selection-start-column="153" selection-end-column="153" />
             </state>
           </provider>
         </entry>
@@ -70,11 +71,20 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/example/flutter_plugin_check/FlutterPluginCheckPlugin.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="370">
-              <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -88,6 +98,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/android/src/main/kotlin/com/example/flutter_plugin_check/FlutterPluginCheckPlugin.kt" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
       </list>
     </option>
   </component>
@@ -197,7 +208,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.33507463" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33507463" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -208,7 +219,7 @@
       <window_info anchor="bottom" id="Run" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.3298731" />
+      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.3298731" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -245,7 +256,7 @@
     <entry file="file://$PROJECT_DIR$/.flutter-plugins-dependencies">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="153" lean-forward="true" selection-start-column="153" selection-end-column="153" />
+          <caret column="153" selection-start-column="153" selection-end-column="153" />
         </state>
       </provider>
     </entry>
@@ -262,7 +273,14 @@
     <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/com/example/flutter_plugin_check/FlutterPluginCheckPlugin.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
-          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
