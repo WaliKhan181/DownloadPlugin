@@ -28,7 +28,7 @@ public class FlutterPluginCheckPlugin: FlutterPlugin, MethodCallHandler {
     @JvmStatic
     fun registerWith(registrar: Registrar) {
       val channel = MethodChannel(registrar.messenger(), "flutter_plugin_check")
-      channel.setMethodCallHandler(FlutterPluginCheckPlugin(regist))
+      channel.setMethodCallHandler(FlutterPluginCheckPlugin(registar))
     }
   }
 
@@ -42,5 +42,6 @@ public class FlutterPluginCheckPlugin: FlutterPlugin, MethodCallHandler {
   }
 
   override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
+    print("HI")
   }
 }
